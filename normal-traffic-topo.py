@@ -75,7 +75,7 @@ if __name__ == '__main__':
     net.start()
 
     if TEST_TYPE == "normal":
-        print "Generating Legitimate Traffic, Please switch over to the controller to see the packets"
+        print ("Generating Legitimate Traffic, Please switch over to the controller to see the packets")
         h1 = net.get('h1')
         cmd1 = "bash normal.sh &"
         h1.cmd(cmd1)
@@ -122,7 +122,7 @@ if __name__ == '__main__':
         sleep(TEST_TIME)
         net.stop()
     elif TEST_TYPE == "attack":
-        print "Generating Attack Traffic, Please switch over to the controller to see the packets"
+        print ("Generating Attack Traffic, Please switch over to the controller to see the packets")
         h1 = net.get('h1')
         cmd1 = "bash attack.sh &"
         h1.cmd(cmd1)
