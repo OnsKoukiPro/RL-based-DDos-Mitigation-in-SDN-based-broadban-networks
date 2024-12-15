@@ -20,7 +20,7 @@ import time
 import math
 import statistics
 
-from svm import SVM
+from svm_model import SVM
 
 APP_TYPE = 1
 #0 datacollection, 1 ddos detection

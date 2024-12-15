@@ -1,0 +1,22 @@
+Terminal 1
+-----------
+
+ryu-manager normal-traffic-topo.py
+ryu-manager attack-traffic-topo.py
+
+ryu-manager normal-traffic-detection.py
+ryu-manager attack-traffic-detection.py
+
+
+Terminal 2
+-----------
+
+sudo python2 normal-traffic-topo.py && sudo mn -c
+sudo python2 attack-traffic-topo.py && sudo mn -c
+
+sudo python2 normal-traffic-topo.py
+sudo python2 attack-traffic-topo.py
+
+sudo python3 accuracy.py;
+sudo python3 rate.py;
+sudo python3 graph.py;
